@@ -162,6 +162,73 @@
             width: 25px;
             height: 25px;
         }
+
+
+         /* Estilos para la sección de perfil */
+    .profile-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+        padding: 15px;
+        background-color: #f7f9fa;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    }
+
+    /* Contenedor del logo */
+    .logo-container {
+        flex: 1;
+        text-align: center;
+        padding: 10px;
+    }
+
+    /* Estilo del logo */
+    .blog-logo {
+        max-width: 200px;
+        height: auto;
+        transition: transform 0.3s ease;
+    }
+
+    .blog-logo:hover {
+        transform: scale(1.05);
+    }
+
+    /* Contenedor de la foto de perfil */
+    .profile-photo-container {
+        flex: 1;
+        text-align: center;
+        padding: 10px;
+    }
+
+    /* Estilo de la foto circular */
+    .profile-photo {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 5px solid #3498db;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        transition: transform 0.3s ease, border-color 0.3s ease;
+    }
+
+    .profile-photo:hover {
+        transform: scale(1.05);
+        border-color: #e74c3c;
+    }
+
+    /* Ajustes responsivos */
+    @media (max-width: 600px) {
+        .profile-section {
+            flex-direction: column;
+        }
+        
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            margin-top: 15px;
+        }
+        }
     </style>
 </head>
 <body>
@@ -171,6 +238,22 @@
             <p><em>Ingeniero de Sistemas Visionario y Agente de Cambio Digital</em></p>
         </header>
 
+
+
+        
+        <!-- A continuacion encontraremos la seccion de los logos que van acorde a programación -->
+        <div class="profile-section">
+            <div class="logo-container">
+                <img src="URL-DE-TU-LOGO" alt="Logo del Blog" class="blog-logo">
+            </div>
+            <div class="profile-photo-container">
+                <img src="URL-DE-TU-FOTO" alt="Jorge Armando Jiménez Gaviria" class="profile-photo">
+            </div>
+        </div>
+
+        <!-- Fin de sección -->
+
+        
         <section class="section" id="inicio">
             <h2>Bienvenida</h2>
             <p>¡Saludos y bienvenidos a mi espacio digital! Soy Jorge Armando Jiménez Gaviria, un apasionado Ingeniero de Sistemas comprometido con la <span class="highlight">transformación tecnológica</span> y el <span class="highlight">impacto social</span>. Mi misión es fusionar la innovación técnica con el desarrollo humano, creando soluciones que no solo optimicen procesos, sino que también enriquezcan vidas.</p>
